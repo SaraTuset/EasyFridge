@@ -8,8 +8,9 @@
       <Unit>
         <Filename Value="easyfridge.lpr"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="EasyFridge"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="35" Y="10"/>
+        <CursorPos X="78" Y="11"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
@@ -18,12 +19,12 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uFridge"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="13"/>
+        <CursorPos X="3" Y="10"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="1">
+    <JumpHistory HistoryIndex="2">
       <Position>
         <Filename Value="ufridge.pas"/>
         <Caret Column="13"/>
@@ -31,6 +32,10 @@
       <Position>
         <Filename Value="easyfridge.lpr"/>
         <Caret Line="9" Column="20"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="11" Column="78"/>
       </Position>
     </JumpHistory>
     <RunParams>

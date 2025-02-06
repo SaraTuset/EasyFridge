@@ -6,7 +6,7 @@ uses
   {$IFDEF UNIX}
   cthreads,
   {$ENDIF}
-  Classes, uFridge;
+  Classes, uFridge;  //Shopping list, Stats, Meals planning, Warnings
 
 begin
 end.
