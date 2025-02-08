@@ -19,11 +19,7 @@ uses
        -Amount
   }
 
-PROCEDURE AddEasily(var fridge: TFridge);
-
 implementation
-
-PROCEDURE AddEasily(var fridge: TFridge);
 
 end.
 
