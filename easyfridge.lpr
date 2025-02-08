@@ -14,9 +14,12 @@ type
     quantity: integer;
   end;
 
+var
+  arrInventory: Tinventory;
+
 begin
   writeln('Bienvenido a EasyFridge');
-  ShowInventory();
+  ShowInventory(arrInventory);
   GenerateShoppingList;
   RegisterConsumption;
   ShowAvailableRecipes;
