@@ -6,15 +6,16 @@ uses
   {$IFDEF UNIX}
   cthreads,
   {$ENDIF}
-  Inventory; // ShoppingList, Consumption, Recipes, Notifications,
+  uFridge;
 
-var
-  arrInventory: TarrInventory;
 
 begin
   writeln('Bienvenido a EasyFridge');
-  AddProduct(arrInventory,'lentejas',3);
-  ShowInventory(arrInventory);
+  AddProduct('lentejas',3);
+  ShowMyInventory();
+  RemoveProduct('lentejas');
+  ShowMyInventory();
+  ShowMyShoppingList();
   Readln;
   {Future operations:
   GenerateShoppingList;

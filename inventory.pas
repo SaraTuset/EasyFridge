@@ -17,8 +17,8 @@ type
 
 
 PROCEDURE ShowInventory(InventoryList: TarrInventory);
-PROCEDURE AddProduct(var InventoryList: TarrInventory; name: string; quantity: integer);
-PROCEDURE RemoveProduct(var InventoryList: TarrInventory; name: string);
+PROCEDURE AddProductToInventory(var InventoryList: TarrInventory; name: string; quantity: integer);
+PROCEDURE RemoveProductToInventory(var InventoryList: TarrInventory; name: string);
 
 implementation
 
@@ -30,14 +30,14 @@ begin
          writeln(InventoryList[i].name, ' - ', InventoryList[i].quantity);
 end;
 
-  procedure AddProduct(var InventoryList: TarrInventory; name: string; quantity: integer);
+  procedure AddProductToInventory(var InventoryList: TarrInventory; name: string; quantity: integer);
   begin
     inc(itemCount);
     InventoryList[itemCount].name := name;
     InventoryList[itemCount].quantity := quantity;
   end;
 
-PROCEDURE RemoveProduct(var InventoryList: TarrInventory; name: string);
+PROCEDURE RemoveProductToInventory(var InventoryList: TarrInventory; name: string);
 var i, j: integer;
 begin
      for i := 1 to itemCount do
