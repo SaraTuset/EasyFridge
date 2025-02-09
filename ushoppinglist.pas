@@ -1,4 +1,4 @@
-unit ShoppingList;
+unit uShoppingList;
 
 {$mode ObjFPC}{$H+}
 
@@ -13,19 +13,19 @@ Type
 var
  itemCount: integer = 0;
 
- procedure AddToShoppingList(var list: TShopingList; name: String);
- procedure DeleteShoppingList(var list: TShopingList);
- procedure ShowShoppingList(list: TShopingList);
+ PROCEDURE AddToShoppingList(var list: TShopingList; name: String);
+ PROCEDURE DeleteShoppingList(var list: TShopingList);
+ PROCEDURE ShowShoppingList(list: TShopingList);
 
 implementation
 
-procedure AddToShoppingList(var list: TShopingList; name: String);
+PROCEDURE AddToShoppingList(var list: TShopingList; name: String);
 begin
   inc(itemCount);
   list[itemCount] := name;
 end;
 
-procedure DeleteShoppingList(var list: TShopingList);
+PROCEDURE DeleteShoppingList(var list: TShopingList);
 var
  aux : TShopingList;
 begin
@@ -33,7 +33,7 @@ begin
   itemCount := 0;
 end;
 
-procedure ShowShoppingList(list: TShopingList);
+PROCEDURE ShowShoppingList(list: TShopingList);
 var
  i: Integer;
 begin

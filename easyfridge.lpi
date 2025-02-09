@@ -38,7 +38,7 @@
       <Unit>
         <Filename Value="shoppinglist.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="ShoppingList"/>
+        <UnitName Value="uShoppingList"/>
       </Unit>
       <Unit>
         <Filename Value="ufridge.pas"/>

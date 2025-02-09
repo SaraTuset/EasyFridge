@@ -1,4 +1,4 @@
-unit Inventory;
+unit uInventory;
 
 {$mode ObjFPC}{$H+}
 
@@ -30,7 +30,7 @@ begin
          writeln(InventoryList[i].name, ' - ', InventoryList[i].quantity);
 end;
 
-  procedure AddProductToInventory(var InventoryList: TarrInventory; name: string; quantity: integer);
+  PROCEDURE AddProductToInventory(var InventoryList: TarrInventory; name: string; quantity: integer);
   begin
     inc(itemCount);
     InventoryList[itemCount].name := name;

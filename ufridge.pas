@@ -5,16 +5,16 @@ unit uFridge;
 interface
 
 uses
-  Inventory, ShoppingList; // , Consumption, Recipes, Notifications,;
+  uInventory, uShoppingList; // , Consumption, Recipes, Notifications,;
 
 var
   arrInventory: TarrInventory;
-  myshoppingList: TShopingList;
+  shoppingList: TShopingList;
 
 PROCEDURE AddProduct(name: String; quantity: Integer);
 PROCEDURE RemoveProduct(name: String);
 PROCEDURE ShowMyInventory();
-procedure ShowMyShoppingList();
+PROCEDURE ShowMyShoppingList();
 
 implementation
 
@@ -26,7 +26,7 @@ end;
 PROCEDURE RemoveProduct(name: String);
 begin
   RemoveProductToInventory(arrInventory,name);
-  AddToShoppingList(myshoppingList,name);
+  AddToShoppingList(shoppingList,name);
 end;
 
 PROCEDURE ShowMyInventory();
@@ -34,9 +34,9 @@ begin
   ShowInventory(arrInventory);
 end;
 
-procedure ShowMyShoppingList();
+PROCEDURE ShowMyShoppingList();
 begin
-  ShowShoppingList(myshoppingList);
+  ShowShoppingList(shoppingList);
 end;
 
 end.
