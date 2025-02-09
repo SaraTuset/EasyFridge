@@ -28,6 +28,7 @@
       <Unit>
         <Filename Value="easyfridge.lpr"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="EasyFridge"/>
       </Unit>
       <Unit>
         <Filename Value="ufridge.pas"/>

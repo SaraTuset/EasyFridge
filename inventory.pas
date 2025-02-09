@@ -3,22 +3,26 @@ unit Inventory;
 {$mode ObjFPC}{$H+}
 
 interface
+//Has the operations that used to had uFridge
+type
+  Tinventory = RECORD
+    name: string;
+    quantity: integer;
+  end;
 
+ TarrInventory = array[1..100] of Tinventory;
 
-var arrInventory: array[1..100] of Tinventory;
-
+ var
   itemCount: integer = 0;
 
-uses
-  Classes, SysUtils;
 
-PROCEDURE ShowInventory(InventoryList: TInventory);
-PROCEDURE AddProduct(var InventoryList: TInventory; name: string; quantity: integer);
-PROCEDURE RemoveProduct(name: string);
+PROCEDURE ShowInventory(InventoryList: TarrInventory);
+PROCEDURE AddProduct(var InventoryList: TarrInventory; name: string; quantity: integer);
+PROCEDURE RemoveProduct(var InventoryList: TarrInventory; name: string);
 
 implementation
 
-PROCEDURE ShowInventory(InventoryList: TInventory);
+PROCEDURE ShowInventory(InventoryList: TarrInventory);
 var i: integer;
 begin
      writeln('Inventario actual:');
@@ -26,14 +30,14 @@ begin
          writeln(InventoryList[i].name, ' - ', InventoryList[i].quantity);
 end;
 
-  procedure AddProduct(var InventoryList: TInventory; name: string; quantity: integer);
+  procedure AddProduct(var InventoryList: TarrInventory; name: string; quantity: integer);
   begin
     inc(itemCount);
     InventoryList[itemCount].name := name;
     InventoryList[itemCount].quantity := quantity;
   end;
 
-PROCEDURE RemoveProduct(var InventoryList: TInventory; name: string);
+PROCEDURE RemoveProduct(var InventoryList: TarrInventory; name: string);
 var i, j: integer;
 begin
      for i := 1 to itemCount do
@@ -42,10 +46,9 @@ begin
               for j := i to itemCount - 1 do
               begin
                   InventoryList[j] := InventoryList[j + 1];
-                  dec(itemCount);
-                  break;
               end;
          end;
+     dec(itemCount);
 end;
 end.
 

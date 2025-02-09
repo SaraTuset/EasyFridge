@@ -10,32 +10,89 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="EasyFridge"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="78" Y="11"/>
-        <UsageCount Value="20"/>
+        <CursorPos X="10" Y="18"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="ufridge.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uFridge"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="6" Y="9"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\En la nube\ED-2025-Laboratorio02-TAD\uComplejo.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25"/>
+        <CursorPos Y="56"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\En la nube\ED-2025-Laboratorio02-TAD\tad_ej1_num_complejo.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="52" Y="22"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="inventory.pas"/>
+        <UnitName Value="Inventory"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="3" Y="10"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="7"/>
+        <CursorPos X="60" Y="31"/>
+        <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="2">
+    <JumpHistory HistoryIndex="11">
       <Position>
-        <Filename Value="ufridge.pas"/>
-        <Caret Column="13"/>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="9" Column="73"/>
+      </Position>
+      <Position>
+        <Filename Value="inventory.pas"/>
+        <Caret Line="8" Column="21"/>
+      </Position>
+      <Position>
+        <Filename Value="inventory.pas"/>
+        <Caret Line="16" Column="4"/>
+      </Position>
+      <Position>
+        <Filename Value="inventory.pas"/>
+        <Caret Line="52" Column="21" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="inventory.pas"/>
+        <Caret Line="22" Column="59" TopLine="5"/>
       </Position>
       <Position>
         <Filename Value="easyfridge.lpr"/>
-        <Caret Line="9" Column="20"/>
+        <Caret Line="9" Column="12"/>
       </Position>
       <Position>
         <Filename Value="easyfridge.lpr"/>
-        <Caret Line="11" Column="78"/>
+        <Caret Line="12" Column="22"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="16" Column="4"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="17" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="15" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="17" Column="22"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="16"/>
       </Position>
     </JumpHistory>
     <RunParams>

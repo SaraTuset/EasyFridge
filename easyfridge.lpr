@@ -6,23 +6,20 @@ uses
   {$IFDEF UNIX}
   cthreads,
   {$ENDIF}
-  Inventory, ShoppingList, Consumption, Recipes, Notifications, uFridge, unit1;
-
-type
-  Tinventory = RECORD
-    name: string;
-    quantity: integer;
-  end;
+  Inventory; // ShoppingList, Consumption, Recipes, Notifications,
 
 var
-  arrInventory: Tinventory;
+  arrInventory: TarrInventory;
 
 begin
   writeln('Bienvenido a EasyFridge');
+  AddProduct(arrInventory,'lentejas',3);
   ShowInventory(arrInventory);
+  Readln;
+  {Future operations:
   GenerateShoppingList;
   RegisterConsumption;
   ShowAvailableRecipes;
-  CheckExpiration;
+  CheckExpiration;}
 end.
 
