@@ -5,16 +5,18 @@ unit uFridge;
 interface
 
 uses
-  uInventory, uShoppingList; // , Consumption, Recipes, Notifications,;
+  uInventory, uShoppingList, uConsumption; // , Consumption, Recipes, Notifications,;
 
 var
   arrInventory: TarrInventory;
   shoppingList: TShopingList;
+  consuptionList: TListConsumptions;
 
 PROCEDURE AddProduct(name: String; quantity: Integer);
-PROCEDURE RemoveProduct(name: String);
-PROCEDURE ShowMyInventory();
+PROCEDURE EatProduct(name: String);
+PROCEDURE ShowMyInventory();    //Unify as ShowLists??
 PROCEDURE ShowMyShoppingList();
+PROCEDURE ShowMyConsumptions();
 
 implementation
 
@@ -23,10 +25,11 @@ begin
   AddProductToInventory(arrInventory,name,quantity);
 end;
 
-PROCEDURE RemoveProduct(name: String);
+PROCEDURE EatProduct(name: String);
 begin
   RemoveProductToInventory(arrInventory,name);
   AddToShoppingList(shoppingList,name);
+  SetConsumption(consuptionList, name);
 end;
 
 PROCEDURE ShowMyInventory();
@@ -37,6 +40,11 @@ end;
 PROCEDURE ShowMyShoppingList();
 begin
   ShowShoppingList(shoppingList);
+end;
+
+PROCEDURE ShowMyConsumptions();
+begin
+  ShowConsuptions(consuptionList);
 end;
 
 end.

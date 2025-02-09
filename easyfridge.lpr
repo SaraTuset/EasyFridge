@@ -13,13 +13,12 @@ begin
   writeln('Bienvenido a EasyFridge');
   AddProduct('lentejas',3);
   ShowMyInventory();
-  RemoveProduct('lentejas');
+  EatProduct('lentejas');
   ShowMyInventory();
   ShowMyShoppingList();
+  ShowMyConsumptions();
   Readln;
   {Future operations:
-  GenerateShoppingList;
-  RegisterConsumption;
   ShowAvailableRecipes;
   CheckExpiration;}
 end.

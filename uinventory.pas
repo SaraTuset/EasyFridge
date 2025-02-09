@@ -25,9 +25,14 @@ implementation
 PROCEDURE ShowInventory(InventoryList: TarrInventory);
 var i: integer;
 begin
-     writeln('Inventario actual:');
-     for i := 1 to itemCount do
-         writeln(InventoryList[i].name, ' - ', InventoryList[i].quantity);
+     if itemCount > 0 then
+       begin
+         writeln('Inventario actual:');
+         for i := 1 to itemCount do
+             writeln(InventoryList[i].name, ' - ', InventoryList[i].quantity);
+       end
+     else
+         WriteLn('El inventario está vacío.');
 end;
 
   PROCEDURE AddProductToInventory(var InventoryList: TarrInventory; name: string; quantity: integer);

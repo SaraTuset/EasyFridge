@@ -45,6 +45,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uFridge"/>
       </Unit>
+      <Unit>
+        <Filename Value="uconsumption.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uConsumption"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
