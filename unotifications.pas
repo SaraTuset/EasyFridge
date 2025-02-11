@@ -20,7 +20,8 @@ begin
   for i := 1 to 100 do
   begin
     if Trunc(arr[i].expiration_date) <= Trunc(today) then
-      WriteLn('ATENCIÓN: El producto "', arr[i].name, '" ha expirado o está a punto de expirar!');
+      if arr[i].name <> '' then
+         WriteLn('ATENCIÓN: El producto "', arr[i].name, '" ha expirado o está a punto de expirar!');
   end;
 end;
 

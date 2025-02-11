@@ -18,9 +18,8 @@
         <Filename Value="ufridge.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uFridge"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="5"/>
+        <TopLine Value="38"/>
         <CursorPos X="35" Y="19"/>
         <UsageCount Value="72"/>
         <Loaded Value="True"/>
@@ -48,8 +47,10 @@
         <Filename Value="unotifications.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uNotifications"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
-        <CursorPos X="27" Y="14"/>
+        <TopLine Value="9"/>
+        <CursorPos X="10" Y="24"/>
         <UsageCount Value="62"/>
         <Loaded Value="True"/>
       </Unit>
