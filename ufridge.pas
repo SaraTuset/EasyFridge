@@ -17,6 +17,7 @@ PROCEDURE EatProduct(name: String);
 PROCEDURE ShowMyInventory();    //Unify as ShowLists??
 PROCEDURE ShowMyShoppingList();
 PROCEDURE ShowMyConsumptions();
+PROCEDURE SendNotifications();
 
 implementation
 
@@ -47,7 +48,7 @@ begin
   ShowConsuptions(consuptionList);
 end;
 
-PROCEDURE SendNotification();
+PROCEDURE SendNotifications();
 begin
   SendNotification(arrInventory);
 end;

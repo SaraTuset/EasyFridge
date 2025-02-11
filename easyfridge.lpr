@@ -21,7 +21,7 @@ begin
   ShowMyInventory();
   ShowMyShoppingList();
   ShowMyConsumptions();
-  SendNotification();
+  SendNotifications();
   Readln;
   {Future operations:
   ShowAvailableRecipes;

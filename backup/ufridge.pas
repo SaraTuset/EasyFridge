@@ -5,7 +5,7 @@ unit uFridge;
 interface
 
 uses
-  uInventory, uShoppingList, uConsumption; // , uConsumption, uRecipes, uNotifications,;
+  uInventory, uShoppingList, uConsumption, uNotifications; // , uConsumption, uRecipes, uNotifications,;
 
 var
   arrInventory: TarrInventory;
@@ -17,6 +17,7 @@ PROCEDURE EatProduct(name: String);
 PROCEDURE ShowMyInventory();    //Unify as ShowLists??
 PROCEDURE ShowMyShoppingList();
 PROCEDURE ShowMyConsumptions();
+PROCEDURE SendNotification();
 
 implementation
 
@@ -47,7 +48,7 @@ begin
   ShowConsuptions(consuptionList);
 end;
 
-PROCEDURE SendNotification();
+PROCEDURE SendNotifications();
 begin
   SendNotification(arrInventory);
 end;

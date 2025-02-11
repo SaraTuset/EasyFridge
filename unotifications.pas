@@ -7,11 +7,11 @@ interface
 uses
   Classes, SysUtils, uInventory;
 
-PROCEDURE SendNotification(arr: TInventory);
+PROCEDURE SendNotification(arr: TarrInventory);
 
 implementation
 
-PROCEDURE SendNotification(arr: TInventory);
+PROCEDURE SendNotification(arr: TarrInventory);
 var
   i: Integer;
   today: TDateTime;
@@ -20,7 +20,7 @@ begin
   for i := 1 to 100 do
   begin
     if Trunc(arr[i].expiration_date) <= Trunc(today) then
-      WriteLn('⚠️ ATENCIÓN: El producto "', arr[i].name, '" ha expirado o está a punto de expirar!');
+      WriteLn('ATENCIÓN: El producto "', arr[i].name, '" ha expirado o está a punto de expirar!');
   end;
 end;
 
