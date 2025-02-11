@@ -41,14 +41,14 @@
         <UnitName Value="uShoppingList"/>
       </Unit>
       <Unit>
-        <Filename Value="ufridge.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="uFridge"/>
-      </Unit>
-      <Unit>
         <Filename Value="uconsumption.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uConsumption"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unotifications.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uNotifications"/>
       </Unit>
     </Units>
   </ProjectOptions>

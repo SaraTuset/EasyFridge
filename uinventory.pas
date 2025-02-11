@@ -4,10 +4,14 @@ unit uInventory;
 
 interface
 //Has the operations that used to had uFridge
+uses
+    SysUtils;
+
 type
   Tinventory = RECORD
     name: string;
     quantity: integer;
+    expiration_date: TDateTime;
   end;
 
  TarrInventory = array[1..100] of Tinventory;
@@ -17,7 +21,7 @@ type
 
 
 PROCEDURE ShowInventory(InventoryList: TarrInventory);
-PROCEDURE AddProductToInventory(var InventoryList: TarrInventory; name: string; quantity: integer);
+PROCEDURE AddProductToInventory(var InventoryList: TarrInventory; name: string; quantity: integer; expiration_date: TDateTime);
 PROCEDURE RemoveProductToInventory(var InventoryList: TarrInventory; name: string);
 
 implementation
@@ -29,17 +33,18 @@ begin
        begin
          writeln('Inventario actual:');
          for i := 1 to itemCount do
-             writeln(InventoryList[i].name, ' - ', InventoryList[i].quantity);
+             writeln(InventoryList[i].name, ' - ', InventoryList[i].quantity,' - ', FormatDateTime('dd/mm/yyyy', InventoryList[i].expiration_date));
        end
      else
          WriteLn('El inventario está vacío.');
 end;
 
-  PROCEDURE AddProductToInventory(var InventoryList: TarrInventory; name: string; quantity: integer);
+  PROCEDURE AddProductToInventory(var InventoryList: TarrInventory; name: string; quantity: integer; expiration_date: TDateTime);
   begin
     inc(itemCount);
     InventoryList[itemCount].name := name;
     InventoryList[itemCount].quantity := quantity;
+    InventoryList[itemCount].expiration_date := expiration_date;
   end;
 
 PROCEDURE RemoveProductToInventory(var InventoryList: TarrInventory; name: string);

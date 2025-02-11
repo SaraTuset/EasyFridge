@@ -6,17 +6,22 @@ uses
   {$IFDEF UNIX}
   cthreads,
   {$ENDIF}
-  uFridge;
+  uFridge, SysUtils;
+
+var
+  fecha: TDateTime;
 
 
 begin
   writeln('Bienvenido a EasyFridge');
-  AddProduct('lentejas',3);
+  fecha := EncodeDate(2025, 2, 10);
+  AddProduct('lentejas',3, fecha);
   ShowMyInventory();
   EatProduct('lentejas');
   ShowMyInventory();
   ShowMyShoppingList();
   ShowMyConsumptions();
+  SendNotification();
   Readln;
   {Future operations:
   ShowAvailableRecipes;

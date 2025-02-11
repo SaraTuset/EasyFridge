@@ -1,25 +1,56 @@
 unit uFridge;
-
+//Logic layer
 {$mode ObjFPC}{$H+}
 
 interface
 
 uses
-  Classes, SysUtils;
+  uInventory, uShoppingList, uConsumption; // , uConsumption, uRecipes, uNotifications,;
 
-//type
-  {TFridge type has the following requierements:
-       -Safe products on the fridge;
-       -Delete easily (low complexity);
-       -Add easily (low complexity);
-       -Search easily (low complexity);
-       -Deadline in every product;
-  TProduct has:
-       -Deadline
-       -Amount
-  }
+var
+  arrInventory: TarrInventory;
+  shoppingList: TShopingList;
+  consuptionList: TListConsumptions;
+
+PROCEDURE AddProduct(name: String; quantity: Integer; expiration_date: TDateTime);
+PROCEDURE EatProduct(name: String);
+PROCEDURE ShowMyInventory();    //Unify as ShowLists??
+PROCEDURE ShowMyShoppingList();
+PROCEDURE ShowMyConsumptions();
 
 implementation
+
+PROCEDURE AddProduct(name: String; quantity: Integer; expiration_date: TDateTime);
+begin
+  AddProductToInventory(arrInventory,name,quantity, expiration_date);
+end;
+
+PROCEDURE EatProduct(name: String);
+begin
+  RemoveProductToInventory(arrInventory,name);
+  AddToShoppingList(shoppingList,name);
+  SetConsumption(consuptionList, name);
+end;
+
+PROCEDURE ShowMyInventory();
+begin
+  ShowInventory(arrInventory);
+end;
+
+PROCEDURE ShowMyShoppingList();
+begin
+  ShowShoppingList(shoppingList);
+end;
+
+PROCEDURE ShowMyConsumptions();
+begin
+  ShowConsuptions(consuptionList);
+end;
+
+PROCEDURE SendNotification();
+begin
+  SendNotification(arrInventory);
+end;
 
 end.
 
