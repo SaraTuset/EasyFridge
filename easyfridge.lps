@@ -9,8 +9,10 @@
         <Filename Value="easyfridge.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="EasyFridge"/>
-        <CursorPos X="20" Y="9"/>
-        <UsageCount Value="75"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="4"/>
+        <CursorPos X="33" Y="19"/>
+        <UsageCount Value="78"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -18,9 +20,9 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uFridge"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="38"/>
-        <CursorPos X="35" Y="19"/>
-        <UsageCount Value="74"/>
+        <TopLine Value="15"/>
+        <CursorPos X="40" Y="33"/>
+        <UsageCount Value="77"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -30,16 +32,16 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="14"/>
         <CursorPos Y="13"/>
-        <UsageCount Value="74"/>
+        <UsageCount Value="77"/>
       </Unit>
       <Unit>
         <Filename Value="uconsumption.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uConsumption"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="10"/>
+        <TopLine Value="4"/>
         <CursorPos X="37" Y="33"/>
-        <UsageCount Value="65"/>
+        <UsageCount Value="68"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -47,8 +49,8 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uNotifications"/>
         <EditorIndex Value="6"/>
-        <CursorPos X="10" Y="24"/>
-        <UsageCount Value="64"/>
+        <CursorPos Y="24"/>
+        <UsageCount Value="67"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -56,27 +58,28 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="25"/>
         <CursorPos Y="56"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="..\En la nube\ED-2025-Laboratorio02-TAD\tad_ej1_num_complejo.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="52" Y="22"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="inventory.pas"/>
         <UnitName Value="Inventory"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="19" Y="9"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="uinventory.pas"/>
         <UnitName Value="uInventory"/>
         <EditorIndex Value="5"/>
+        <TopLine Value="35"/>
         <CursorPos X="29" Y="37"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="37"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -85,61 +88,20 @@
         <EditorIndex Value="4"/>
         <TopLine Value="14"/>
         <CursorPos Y="46"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="urecepies.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uRecepies"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <CursorPos X="88" Y="23"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="25"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="ufridge.pas"/>
-        <Caret Line="52" Column="32" TopLine="37"/>
-      </Position>
-      <Position>
-        <Filename Value="ufridge.pas"/>
-        <Caret Line="8" Column="58"/>
-      </Position>
-      <Position>
-        <Filename Value="unotifications.pas"/>
-        <Caret Line="22" Column="11" TopLine="9"/>
-      </Position>
-      <Position>
-        <Filename Value="unotifications.pas"/>
-        <Caret Line="10" Column="32"/>
-      </Position>
-      <Position>
-        <Filename Value="unotifications.pas"/>
-        <Caret Line="30" Column="7" TopLine="11"/>
-      </Position>
-      <Position>
-        <Filename Value="unotifications.pas"/>
-        <Caret Line="28" Column="58" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="unotifications.pas"/>
-        <Caret Line="22" Column="19" TopLine="9"/>
-      </Position>
-      <Position>
-        <Filename Value="easyfridge.lpr"/>
-        <Caret Line="24" Column="20" TopLine="8"/>
-      </Position>
-      <Position>
-        <Filename Value="unotifications.pas"/>
-        <Caret Line="22" Column="19" TopLine="9"/>
-      </Position>
-      <Position>
-        <Filename Value="unotifications.pas"/>
-        <Caret Line="27" Column="16" TopLine="9"/>
-      </Position>
       <Position>
         <Filename Value="uinventory.pas"/>
         <Caret Line="12" Column="43" TopLine="5"/>
@@ -219,6 +181,46 @@
       <Position>
         <Filename Value="urecepies.pas"/>
         <Caret Line="24" Column="50" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="urecepies.pas"/>
+        <Caret Line="23" Column="88" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="64" Column="10" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="19" Column="14"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="22" Column="38" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="27" Column="21" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="29" Column="20" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="31" Column="21" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="60" Column="6" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="55" Column="29" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="19" Column="30"/>
       </Position>
     </JumpHistory>
     <RunParams>
