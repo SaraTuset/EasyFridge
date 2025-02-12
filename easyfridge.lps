@@ -10,8 +10,8 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="EasyFridge"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="32"/>
-        <CursorPos X="10" Y="40"/>
+        <TopLine Value="31"/>
+        <CursorPos X="64" Y="62"/>
         <UsageCount Value="82"/>
         <Loaded Value="True"/>
       </Unit>
@@ -54,6 +54,15 @@
         <Loaded Value="True"/>
       </Unit>
       <Unit>
+        <Filename Value="urecepies.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRecepies"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="88" Y="23"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
         <Filename Value="..\En la nube\ED-2025-Laboratorio02-TAD\uComplejo.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="25"/>
@@ -89,15 +98,6 @@
         <TopLine Value="14"/>
         <CursorPos Y="46"/>
         <UsageCount Value="36"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="urecepies.pas"/>
-        <IsPartOfProject Value="True"/>
-        <UnitName Value="uRecepies"/>
-        <EditorIndex Value="1"/>
-        <CursorPos X="88" Y="23"/>
-        <UsageCount Value="29"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
