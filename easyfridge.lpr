@@ -6,7 +6,7 @@ uses
    SysUtils;
 
 const
-  MAX_PRODUCTS = 4;
+  MAX_PRODUCTS = 10;
 
 type
   TInventario = array[1..MAX_PRODUCTS]  of String;
@@ -50,16 +50,14 @@ begin                                              //13
 
         if opt = 1 then                               //22
            meterAlimento()                              //23
-        else                                                  //24
-            WriteLn('Elige bien la opción (0 o 1).');             //25
-      end;                                                            //26
+      end;                                                            //24
 
-end;                                    //27
+end;                                    //25
 
-begin                                       //28
-  writeln('Bienvenido a EasyFridge');           //29
-  menu();                                           //30
-  WriteLn('Gracias por usar EasyFridge');               //31
-  ReadLn;                                                   //32
-end.
+begin                                       //26
+  writeln('Bienvenido a EasyFridge');           //27
+  menu();                                           //28
+  WriteLn('Gracias por usar EasyFridge');               //29
+  ReadLn;                                                   //30
+end.                                                            //31
 
