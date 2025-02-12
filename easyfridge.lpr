@@ -3,71 +3,63 @@ program EasyFridge;
 {$mode objfpc}{$H+}
 
 uses
-  {$IFDEF UNIX}
-  cthreads,
-  {$ENDIF}
-  uFridge, SysUtils;
+   SysUtils;
+
+const
+  MAX_PRODUCTS = 4;
+
+type
+  TInventario = array[1..MAX_PRODUCTS]  of String;
 
 var
-  fecha: TDateTime;
+  inventario: TInventario;
+  pos: Integer = 0;
 
-procedure comerAlimento();
-var
-  producto: String;
-begin
-    ShowMyInventory();
-    Write('Producto a comer: ');
-    ReadLn(producto);
-    EatProduct(producto);
-end;
 
-procedure comprarAlimento();
+procedure meterAlimento();
 var
   nombre: String;
-  cantidad: Integer;
-  fecha: TDate;
-  aux: String;
-begin
-    WriteLn('Añade las características de tu producto:');
-    Write(' -Nombre: ');
-    Readln(nombre);
-    Write(' -Cantidad: ');
-    Readln(aux);
-    cantidad := StrToInt(aux);
-    Write(' -Fecha: ');
-    Readln(aux);
-    fecha := StrToDate(aux);
-    AddProduct(nombre, cantidad, fecha);
-end;
+
+begin                                       //1
+    if pos < MAX_PRODUCTS then                 //2
+       begin                                      //3
+         WriteLn('Añade las características de tu producto:');   //4
+         Write(' -Nombre: ');                                       //5
+         Readln(nombre);                                               //6
+         inc(pos);                                                        //7
+         inventario[pos] := nombre;       //8
+       end                                  //9
+    else                                      //10
+        WriteLn('La nevera está llena.');         //11
+
+end;                                            //12
+
 
 procedure menu();
 var
   opt: Integer;
-begin
-    opt := 3;
-    while opt <> 0 do
-      begin
-        Writeln('Opciones a hacer:');
-        WriteLn(' 0_ Salir.');
-        WriteLn(' 1_ Comprar alimento.');
-        WriteLn(' 2_ Comer Alimento.');
-        Write('Qué te apetece hacer: ');
-        readln(opt);
+begin                                              //13
+    opt := 3;                                           //14
+    while opt <> 0 do                                       //15
+      begin                                                     //16
+        Writeln('Opciones a hacer:');                               //17
+        WriteLn(' 0_ Salir.');                                          //18
+        WriteLn(' 1_ Comprar alimento.');                                   //19
+        Write('Qué te apetece hacer: ');      //20
+        readln(opt);                              //21
 
-        if opt = 1 then
-           comprarAlimento()
-        else if opt = 2 then
-           comerAlimento()
-        else
-            WriteLn('Elige bien la opción (0, 1 o 2).');
-      end;
+        if opt = 1 then                               //22
+           meterAlimento()                              //23
+        else                                                  //24
+            WriteLn('Elige bien la opción (0 o 1).');             //25
+      end;                                                            //26
 
-end;
+end;                                    //27
 
-begin
-  writeln('Bienvenido a EasyFridge');
-  menu();
-  WriteLn('Gracias por usar EasyFridge');
-  ReadLn;
+begin                                       //28
+  writeln('Bienvenido a EasyFridge');           //29
+  menu();                                           //30
+  WriteLn('Gracias por usar EasyFridge');               //31
+  ReadLn;                                                   //32
 end.
 
