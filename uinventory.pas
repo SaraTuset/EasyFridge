@@ -7,6 +7,9 @@ interface
 uses
     SysUtils;
 
+const
+  MAX_PRODUCTS = 50;
+
 type
   Tinventory = RECORD
     name: string;
@@ -14,7 +17,7 @@ type
     expiration_date: TDateTime;
   end;
 
- TarrInventory = array[1..100] of Tinventory;
+ TarrInventory = array[1..MAX_PRODUCTS] of Tinventory;
 
  var
   itemCount: integer = 0;

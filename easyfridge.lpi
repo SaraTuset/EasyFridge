@@ -50,6 +50,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uNotifications"/>
       </Unit>
+      <Unit>
+        <Filename Value="urecepies.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRecepies"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

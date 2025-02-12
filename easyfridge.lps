@@ -9,19 +9,18 @@
         <Filename Value="easyfridge.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="EasyFridge"/>
-        <TopLine Value="7"/>
-        <CursorPos X="20" Y="24"/>
-        <UsageCount Value="73"/>
+        <CursorPos X="20" Y="9"/>
+        <UsageCount Value="75"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="ufridge.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uFridge"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <TopLine Value="38"/>
         <CursorPos X="35" Y="19"/>
-        <UsageCount Value="72"/>
+        <UsageCount Value="74"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -31,27 +30,25 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="14"/>
         <CursorPos Y="13"/>
-        <UsageCount Value="72"/>
+        <UsageCount Value="74"/>
       </Unit>
       <Unit>
         <Filename Value="uconsumption.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uConsumption"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="23"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="10"/>
         <CursorPos X="37" Y="33"/>
-        <UsageCount Value="63"/>
+        <UsageCount Value="65"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="unotifications.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uNotifications"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="9"/>
+        <EditorIndex Value="6"/>
         <CursorPos X="10" Y="24"/>
-        <UsageCount Value="62"/>
+        <UsageCount Value="64"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -77,46 +74,32 @@
       <Unit>
         <Filename Value="uinventory.pas"/>
         <UnitName Value="uInventory"/>
-        <EditorIndex Value="4"/>
-        <CursorPos Y="67"/>
-        <UsageCount Value="34"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="29" Y="37"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="ushoppinglist.pas"/>
         <UnitName Value="uShoppingList"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="27"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="14"/>
         <CursorPos Y="46"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="urecepies.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uRecepies"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="88" Y="23"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="uconsumption.pas"/>
-        <Caret Line="29" Column="61" TopLine="23"/>
-      </Position>
-      <Position>
-        <Filename Value="uinventory.pas"/>
-        <Caret Line="21" Column="126"/>
-      </Position>
-      <Position>
-        <Filename Value="unotifications.pas"/>
-        <Caret Line="8" Column="32"/>
-      </Position>
-      <Position>
-        <Filename Value="unotifications.pas"/>
-        <Caret Line="25" Column="5" TopLine="6"/>
-      </Position>
-      <Position>
-        <Filename Value="uinventory.pas"/>
-        <Caret Line="33" Column="147" TopLine="25"/>
-      </Position>
-      <Position>
-        <Filename Value="uinventory.pas"/>
-        <Caret Line="8" Column="14"/>
-      </Position>
       <Position>
         <Filename Value="ufridge.pas"/>
         <Caret Line="52" Column="32" TopLine="37"/>
@@ -199,10 +182,6 @@
       </Position>
       <Position>
         <Filename Value="ufridge.pas"/>
-        <Caret Line="8" Column="58" TopLine="38"/>
-      </Position>
-      <Position>
-        <Filename Value="ufridge.pas"/>
         <Caret Line="11" Column="30"/>
       </Position>
       <Position>
@@ -212,6 +191,34 @@
       <Position>
         <Filename Value="ufridge.pas"/>
         <Caret Line="53" Column="32" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="urecepies.pas"/>
+        <Caret Line="16" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="urecepies.pas"/>
+        <Caret Line="17" Column="31"/>
+      </Position>
+      <Position>
+        <Filename Value="urecepies.pas"/>
+        <Caret Line="28" Column="18"/>
+      </Position>
+      <Position>
+        <Filename Value="urecepies.pas"/>
+        <Caret Line="20" Column="92" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="urecepies.pas"/>
+        <Caret Line="27" Column="80" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="urecepies.pas"/>
+        <Caret Line="45" Column="38" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="urecepies.pas"/>
+        <Caret Line="24" Column="50" TopLine="8"/>
       </Position>
     </JumpHistory>
     <RunParams>

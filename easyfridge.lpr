@@ -24,7 +24,6 @@ begin
   SendNotifications();
   Readln;
   {Future operations:
-  ShowAvailableRecipes;
-  CheckExpiration;}
+  ShowAvailableRecipes;}
 end.
 
