@@ -3,7 +3,7 @@ program EasyFridge;
 {$mode objfpc}{$H+}
 
 uses
-   SysUtils;
+   SysUtils, uPila;
 
 const
   MAX_PRODUCTS = 10;
@@ -14,9 +14,10 @@ type
 var
   inventario: TInventario;
   pos: Integer = 0;
+  pila: tPila;
 
 
-procedure meterAlimento();
+{procedure meterAlimento();
 var
   nombre: String;
 
@@ -33,8 +34,7 @@ begin
         WriteLn('La nevera está llena.');
 
 end;
-
-
+  }
 procedure menu();
 var
   opt: Integer;
@@ -44,12 +44,13 @@ begin
       begin
         Writeln('Opciones a hacer:');
         WriteLn(' 0_ Salir.');
-        WriteLn(' 1_ Comprar alimento.');
-        Write('Qué te apetece hacer: ');
+        WriteLn(' 1_ Mostrar inventario.');
+        Write('Que te apetece hacer: ');
         readln(opt);
 
         if opt = 1 then
-           meterAlimento()
+           inicializarInventario(pila);
+           mostrarInventario(pila);
       end;
 
 end;

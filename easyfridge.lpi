@@ -55,6 +55,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uRecepies"/>
       </Unit>
+      <Unit>
+        <Filename Value="upila.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPila"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
