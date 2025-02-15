@@ -79,7 +79,7 @@ end;
 
 PROCEDURE mostrarInventario(p: tPila);
 begin
-  while not isEmpty(p) do
+  while not isEmpty(p) do  //Comprobamos que no esté vacía hasta que el puntero apunte a NIL
   begin
     writeln(peek(p));  // Muestra el elemento en la cima
     p := p^.ant;        // Avanza al siguiente nodo sin modificar la pila original
