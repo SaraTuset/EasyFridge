@@ -45,7 +45,7 @@ begin
         Writeln('Opciones a hacer:');
         WriteLn(' 0_ Salir.');
         WriteLn(' 1_ Mostrar inventario.');
-        Write('Qué te apetece hacer: ');
+        Write('Que te apetece hacer: ');
         readln(opt);
 
         if opt = 1 then

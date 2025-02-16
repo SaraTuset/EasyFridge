@@ -49,8 +49,10 @@ begin
         readln(opt);
 
         if opt = 1 then
-           inicializarInventario(pila);
-           mostrarInventario(pila);
+           begin
+             inicializarInventario(pila);
+             mostrarInventario(pila);
+           end;
       end;
 
 end;
