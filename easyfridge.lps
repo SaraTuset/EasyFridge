@@ -10,8 +10,7 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="EasyFridge"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="32"/>
-        <CursorPos X="38" Y="54"/>
+        <CursorPos Y="10"/>
         <UsageCount Value="83"/>
         <Loaded Value="True"/>
       </Unit>
@@ -67,7 +66,7 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uPila"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="64"/>
+        <TopLine Value="2"/>
         <CursorPos X="16" Y="77"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
