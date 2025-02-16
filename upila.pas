@@ -77,7 +77,7 @@ begin
   push(p, 'Jamon');
 end;
 
-PROCEDURE mostrarInventario(p: tPila);
+PROCEDURE mostrarInventario(p: tPila);   //No hacemos var porque sino perderíamos la pila
 begin
   while not isEmpty(p) do  //Comprobamos que no esté vacía hasta que el puntero apunte a NIL
   begin
