@@ -10,8 +10,7 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="EasyFridge"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="9"/>
-        <CursorPos X="6" Y="15"/>
+        <CursorPos X="47" Y="32"/>
         <UsageCount Value="83"/>
         <Loaded Value="True"/>
       </Unit>

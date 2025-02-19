@@ -33,6 +33,7 @@ begin
            3: WriteLn('No está implementado aún.');
            4: WriteLn('No está implementado aún.');
         end;
+        WriteLn();
       end;
 
 end;
