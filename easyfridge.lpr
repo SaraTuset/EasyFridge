@@ -3,7 +3,7 @@ program EasyFridge;
 {$mode objfpc}{$H+}
 
 uses
-   SysUtils, uPila;
+   SysUtils, uInventory, uPila;
 
 const
   MAX_PRODUCTS = 10;
@@ -23,7 +23,6 @@ begin
         WriteLn(' 1_ Mostrar inventario.');
         WriteLn(' 2_ Annadir a la nevera.');
         WriteLn(' 3_ Retirar alimento.');
-        WriteLn(' 4_ Ver lista de la compra');
         Write('Que te apetece hacer: ');
         readln(opt);
 
@@ -31,7 +30,6 @@ begin
            1: mostrarInventario(inventario);
            2: WriteLn('No esta implementado aun.');
            3: WriteLn('No esta implementado aun.');
-           4: WriteLn('No esta implementado aun.');
         end;
         WriteLn();
       end;

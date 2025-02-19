@@ -20,9 +20,6 @@ PROCEDURE push(var p: tPila; x: string);
 PROCEDURE pop(var p: tPila);
 FUNCTION peek(p: tPila): string;
 FUNCTION isEmpty(p: tPila): boolean;
-PROCEDURE inicializarInventario(var p: tPila);
-PROCEDURE mostrarInventario(p: tPila);
-
 
 implementation
 
@@ -65,25 +62,6 @@ end;
 FUNCTION isEmpty(p: tPila): boolean;
 begin
   isEmpty := p = NIL;
-end;
-
-procedure inicializarInventario(var p: tPila);
-begin
-  initialize(p);  //Ponemos a nil
-  push(p, 'Leche');        //Vamos añadiendo los diferentes productos a la nevera
-  push(p, 'Huevos');
-  push(p, 'Mantequilla');
-  push(p, 'Queso');
-  push(p, 'Jamon');
-end;
-
-PROCEDURE mostrarInventario(p: tPila);   //No hacemos var porque sino perderíamos la pila
-begin
-  while not isEmpty(p) do  //Comprobamos que no esté vacía hasta que el puntero apunte a NIL
-  begin
-    writeln(peek(p));  // Muestra el elemento en la cima
-    p := p^.ant;        // Avanza al siguiente nodo sin modificar la pila original
-  end;
 end;
 
 end.

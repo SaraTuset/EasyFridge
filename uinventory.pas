@@ -1,70 +1,31 @@
 unit uInventory;
 
-{$mode ObjFPC}{$H+}
 
 interface
-//Has the operations that used to had uFridge
-uses
-    SysUtils;
 
-const
-  MAX_PRODUCTS = 50;
+uses uPila;
 
-type
-  Tinventory = RECORD
-    name: string;
-    quantity: integer;
-    expiration_date: TDateTime;
-  end;
-
- TarrInventory = array[1..MAX_PRODUCTS] of Tinventory;
-
- var
-  itemCount: integer = 0;
-
-
-PROCEDURE ShowInventory(InventoryList: TarrInventory);
-PROCEDURE AddProductToInventory(var InventoryList: TarrInventory; name: string; quantity: integer; expiration_date: TDateTime);
-PROCEDURE RemoveProductToInventory(var InventoryList: TarrInventory; name: string);
+PROCEDURE inicializarInventario(var p: tPila);
+PROCEDURE mostrarInventario(p: tPila);
 
 implementation
 
-PROCEDURE ShowInventory(InventoryList: TarrInventory);
-var i: integer;
+procedure inicializarInventario(var p: tPila);
 begin
-     if itemCount > 0 then
-       begin
-         writeln('Inventario actual:');
-         for i := 1 to itemCount do
-             writeln(InventoryList[i].name, ' - ', InventoryList[i].quantity,' - ', FormatDateTime('dd/mm/yyyy', InventoryList[i].expiration_date));
-       end
-     else
-         WriteLn('El inventario está vacío.');
+  initialize(p);  //Ponemos a nil
+  push(p, 'Leche');        //Vamos añadiendo los diferentes productos a la nevera
+  push(p, 'Huevos');
+  push(p, 'Mantequilla');
+  push(p, 'Jamon');
 end;
 
-  PROCEDURE AddProductToInventory(var InventoryList: TarrInventory; name: string; quantity: integer; expiration_date: TDateTime);
+PROCEDURE mostrarInventario(p: tPila);   //No hacemos var porque sino perderíamos la pila
+begin
+  while not isEmpty(p) do  //Comprobamos que no esté vacía hasta que el puntero apunte a NIL
   begin
-    inc(itemCount);
-    InventoryList[itemCount].name := name;
-    InventoryList[itemCount].quantity := quantity;
-    InventoryList[itemCount].expiration_date := expiration_date;
+    writeln(peek(p));  // Muestra el elemento en la cima
+    p := p^.ant;        // Avanza al siguiente nodo sin modificar la pila original
   end;
-
-PROCEDURE RemoveProductToInventory(var InventoryList: TarrInventory; name: string);
-var i, j: integer;
-begin
-     for i := 1 to itemCount do
-         if InventoryList[i].name = name then
-         begin
-              for j := i to itemCount - 1 do
-              begin
-                  InventoryList[j] := InventoryList[j + 1];
-              end;
-         end;
-     dec(itemCount);
 end;
+
 end.
-
-
-
-

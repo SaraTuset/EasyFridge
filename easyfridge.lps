@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="EasyFridge"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="47" Y="32"/>
+        <CursorPos X="31" Y="6"/>
         <UsageCount Value="83"/>
         <Loaded Value="True"/>
       </Unit>
@@ -66,8 +66,8 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uPila"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="2"/>
-        <CursorPos X="16" Y="77"/>
+        <TopLine Value="36"/>
+        <CursorPos X="5" Y="65"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
@@ -95,8 +95,7 @@
         <Filename Value="uinventory.pas"/>
         <UnitName Value="uInventory"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="6"/>
-        <CursorPos X="41" Y="20"/>
+        <CursorPos X="36" Y="11"/>
         <UsageCount Value="38"/>
         <Loaded Value="True"/>
       </Unit>
@@ -111,10 +110,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="ufridge.pas"/>
-        <Caret Line="11" Column="30"/>
-      </Position>
       <Position>
         <Filename Value="ufridge.pas"/>
         <Caret Line="51" Column="28" TopLine="38"/>
@@ -230,6 +225,10 @@
       <Position>
         <Filename Value="upila.pas"/>
         <Caret Line="19" Column="39" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="easyfridge.lpr"/>
+        <Caret Line="6" Column="24"/>
       </Position>
     </JumpHistory>
     <RunParams>
