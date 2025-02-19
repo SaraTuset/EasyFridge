@@ -8,33 +8,9 @@ uses
 const
   MAX_PRODUCTS = 10;
 
-type
-  TInventario = array[1..MAX_PRODUCTS]  of String;
-
 var
-  inventario: TInventario;
-  pos: Integer = 0;
-  pila: tPila;
+  inventario: tPila;
 
-
-{procedure meterAlimento();
-var
-  nombre: String;
-
-begin
-    if pos < MAX_PRODUCTS then
-       begin
-         WriteLn('Añade las características de tu producto:');
-         Write(' -Nombre: ');
-         Readln(nombre);
-         inc(pos);
-         inventario[pos] := nombre;
-       end
-    else
-        WriteLn('La nevera está llena.');
-
-end;
-  }
 procedure menu();
 var
   opt: Integer;
@@ -45,17 +21,24 @@ begin
         Writeln('Opciones a hacer:');
         WriteLn(' 0_ Salir.');
         WriteLn(' 1_ Mostrar inventario.');
+        WriteLn(' 2_ Añadir a la nevera.');
+        WriteLn(' 3_ Retirar alimento.');
+        WriteLn(' 4_ Ver lista de la compra');
         Write('Que te apetece hacer: ');
         readln(opt);
 
-        if opt = 1 then
-           inicializarInventario(pila);
-           mostrarInventario(pila);
+        case opt of
+           1: mostrarInventario(inventario);
+           2: WriteLn('No está implementado aún.');
+           3: WriteLn('No está implementado aún.');
+           4: WriteLn('No está implementado aún.');
+        end;
       end;
 
 end;
 
 begin
+  inicializarInventario(inventario);
   writeln('Bienvenido a EasyFridge');
   menu();
   WriteLn('Gracias por usar EasyFridge');
