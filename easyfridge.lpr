@@ -3,7 +3,7 @@ program EasyFridge;
 {$mode objfpc}{$H+}
 
 uses
-   SysUtils, uInventory;
+   SysUtils, uInventory, uNotifications;
 
 const
   MAX_PRODUCTS = 10;
@@ -31,7 +31,7 @@ begin
            1: mostrarInventario(inventario);
            2: annadirProducto(inventario);
            3: retirarProducto(inventario);
-           4: WriteLn('No implementado aún.');
+           4: mostrarNotificaciones();
         end;
         WriteLn();
       end;

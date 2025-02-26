@@ -5,27 +5,58 @@ unit uNotifications;
 interface
 
 uses
-  Classes, SysUtils, uCola;
+  Classes, SysUtils, uCola, uProducto;
 
 Type
   tCaducados = TCola;
 
-PROCEDURE SendNotification(caducados: tCaducados);
-PROCEDURE annadirCaducado(var caducados: tCaducados);
+PROCEDURE SendNotification(var caducados: tCaducados);
+PROCEDURE annadirCaducados(var caducados: tCaducados; producto: TProducto);
+PROCEDURE retirarDeCaducados(var caducados: tCaducados; nombre: String);
 
 implementation
 
-PROCEDURE SendNotification(caducados: tCaducados);
+PROCEDURE SendNotification(var caducados: tCaducados);
 var
-  i: Integer;
-  today: TDateTime;
+  aux: tCaducados;
 begin
-  today := Now;
+  initialize_queue(aux);
   while not empty_queue(caducados) do
   begin
-    if Trunc(arr[i].expiration_date) <= Trunc(today) then
-         WriteLn('ATENCIÓN: El producto "', arr[i].name, '" ha expirado o está a punto de expirar!');
+         Write('ATENCION: El producto "');
+         Write(getNombre(first(caducados)));
+         Write('" ha expirado el ');
+         Write(DateTimeToStr(getCaducidad(first(caducados))));
+         WriteLn( '!');
+         enqueue(aux, first(caducados));
+         dequeue(caducados);
   end;
+  caducados := aux;
+end;
+
+PROCEDURE annadirCaducados(var caducados: tCaducados; producto: TProducto);
+var
+  today: TDateTime;
+begin
+   today := Now;
+   if Trunc(getCaducidad(producto)) <= Trunc(today) then
+      enqueue(caducados, producto);
+end;
+
+PROCEDURE retirarDeCaducados(var caducados: tCaducados; nombre: String);
+var
+  aux: tCaducados;
+begin
+   initialize(aux);
+   while not empty_queue(caducados) do
+         begin
+           if getNombre(first(caducados)) <> nombre then
+              begin
+                enqueue(aux, first(caducados));
+              end;
+           dequeue(caducados);
+         end;
+   caducados:=aux;
 end;
 
 end.

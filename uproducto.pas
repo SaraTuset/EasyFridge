@@ -5,7 +5,7 @@ unit uProducto;
 interface
 
 uses
-    DateUtils;
+    SysUtils;
 
 type
   TProducto = RECORD
