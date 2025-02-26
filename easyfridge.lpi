@@ -60,6 +60,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uPila"/>
       </Unit>
+      <Unit>
+        <Filename Value="uproducto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uProducto"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

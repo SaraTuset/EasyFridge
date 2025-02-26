@@ -3,7 +3,7 @@ unit uInventory;
 
 interface
 
-uses uPila;
+uses uPila, uProducto, DateUtils;
 
 type
   tInventory = tPila;
@@ -18,10 +18,10 @@ implementation
 procedure inicializarInventario(var p: tPila);
 begin
   initialize(p);  //Ponemos a nil
-  push(p, 'Leche');        //Vamos añadiendo los diferentes productos a la nevera
-  push(p, 'Huevos');
-  push(p, 'Mantequilla');
-  push(p, 'Jamon');
+  push(p, setProducto('Leche', Now));        //Vamos añadiendo los diferentes productos a la nevera
+  push(p, setProducto('Huevos', Now));
+  push(p, setProducto('Mantequilla', Now));
+  push(p, setProducto('Jamon', Now));
 end;
 
 PROCEDURE mostrarInventario(p: tPila);   //No hacemos var porque sino perderíamos la pila

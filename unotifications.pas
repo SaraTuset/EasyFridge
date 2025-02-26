@@ -5,22 +5,25 @@ unit uNotifications;
 interface
 
 uses
-  Classes, SysUtils, uInventory;
+  Classes, SysUtils, uCola;
 
-PROCEDURE SendNotification(arr: TarrInventory);
+Type
+  tCaducados = TCola;
+
+PROCEDURE SendNotification(caducados: tCaducados);
+PROCEDURE annadirCaducado(var caducados: tCaducados);
 
 implementation
 
-PROCEDURE SendNotification(arr: TarrInventory);
+PROCEDURE SendNotification(caducados: tCaducados);
 var
   i: Integer;
   today: TDateTime;
 begin
   today := Now;
-  for i := 1 to 100 do
+  while not empty_queue(caducados) do
   begin
     if Trunc(arr[i].expiration_date) <= Trunc(today) then
-      if arr[i].name <> '' then
          WriteLn('ATENCIÓN: El producto "', arr[i].name, '" ha expirado o está a punto de expirar!');
   end;
 end;

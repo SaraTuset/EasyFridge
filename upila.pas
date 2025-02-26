@@ -5,20 +5,20 @@ unit uPila;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, uProducto ;
 
 type
   tNodo = record
-    info: string;
+    info: TProducto;
     ant: ^tNodo;
   end;
 
   tPila = ^tNodo;
 
 PROCEDURE initialize(var p: tPila);
-PROCEDURE push(var p: tPila; x: string);
+PROCEDURE push(var p: tPila; x: TProducto);
 PROCEDURE pop(var p: tPila);
-FUNCTION peek(p: tPila): string;
+FUNCTION peek(p: tPila): TProducto;
 FUNCTION isEmpty(p: tPila): boolean;
 
 implementation
@@ -31,7 +31,7 @@ end;
 
 
 
-PROCEDURE push(var p: tPila; x: string);
+PROCEDURE push(var p: tPila; x: TProducto);
 var
   nuevo: ^tNodo;
 begin
@@ -53,7 +53,7 @@ begin
   end;
 end;
 
-FUNCTION peek(p: tPila): string;
+FUNCTION peek(p: tPila): TProducto;
 begin
   if not isEmpty(p) then
      peek := p^.info;

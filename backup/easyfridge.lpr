@@ -31,6 +31,7 @@ begin
            1: mostrarInventario(inventario);
            2: annadirProducto(inventario);
            3: retirarProducto(inventario);
+           4: WriteLn('No implementado aún.');
         end;
         WriteLn();
       end;
