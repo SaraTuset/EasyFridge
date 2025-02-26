@@ -9,7 +9,7 @@ const
   MAX_PRODUCTS = 10;
 
 var
-  inventario: tPila;
+  inventario: tInventory;
 
 procedure menu();
 var
@@ -23,13 +23,14 @@ begin
         WriteLn(' 1_ Mostrar inventario.');
         WriteLn(' 2_ Annadir a la nevera.');
         WriteLn(' 3_ Retirar alimento.');
+        WriteLn(' 4_ Mostrar alertas.');
         Write('Que te apetece hacer: ');
         readln(opt);
 
         case opt of
            1: mostrarInventario(inventario);
-           2: WriteLn('No esta implementado aun.');
-           3: WriteLn('No esta implementado aun.');
+           2: annadirProducto(inventario);
+           3: retirarProducto(inventario);
         end;
         WriteLn();
       end;

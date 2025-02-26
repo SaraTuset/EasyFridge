@@ -5,8 +5,13 @@ interface
 
 uses uPila;
 
+type
+  tInventory = tPila;
+
 PROCEDURE inicializarInventario(var p: tPila);
 PROCEDURE mostrarInventario(p: tPila);
+procedure annadirProducto(var p: tPila);
+procedure retirarProducto(var p: tPila);
 
 implementation
 
@@ -27,5 +32,39 @@ begin
     p := p^.ant;        // Avanza al siguiente nodo sin modificar la pila original
   end;
 end;
+
+procedure annadirProducto(var p: tPila);
+var
+  nombre: String;
+begin
+  Write('Producto a añadir: ');
+  Readln(nombre);
+  push(p, nombre);
+end;
+
+procedure retirarDeInventario(var p: tPila; nombre: String);
+var
+  aux: tPila;
+begin
+   initialize(aux);
+   while not isEmpty(p) do
+         begin
+           if peek(p) <> nombre then
+              begin
+                push(aux, peek(p));
+              end;
+           pop(p);
+         end;
+   p:=aux;
+end;
+
+procedure retirarProducto(var p: tPila);
+var
+  nombre: String;
+begin
+  Write('Producto a retirar: ');
+  Readln(nombre);
+  retirarDeInventario(p, nombre);
+  end;
 
 end.
